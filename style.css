@@ -1,0 +1,47 @@
+:root {  /*the entire document*/
+    --base: #c4e0ae;
+    --spacing: 10px;
+    --blur: 10px;
+}
+
+img{
+    padding: var(--spacing);
+    background: var(--base);
+    filter: blur(var(--blur));
+}
+
+
+.h1{
+    color: var(--base);
+}
+h2{
+    text-align: center;
+ }
+
+body{
+background-color: #153733;
+color: white;
+font-family: 'helvetica neue', sans-serif;
+font-weight: 100;
+font-size: 50px;
+margin: 0;
+}
+
+.controls {
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+a {
+    color: var(--base);
+    text-decoration: none;
+}
+input{
+    width: 100px;
+    margin-bottom: 2%;
+    
+}
