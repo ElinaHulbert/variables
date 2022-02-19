@@ -1,3 +1,12 @@
+
+@font-face {
+    font-family: 'essonnes_displaylight_italic';
+    src: url('essonnesdisplay-lightitalic-webfont.woff2') format('woff2'),
+         url('essonnesdisplay-lightitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 :root {  /*the entire document*/
     --base: #c4e0ae;
     --spacing: 10px;
@@ -8,31 +17,45 @@ img{
     padding: var(--spacing);
     background: var(--base);
     filter: blur(var(--blur));
+    max-width: 900px;
 }
-
+.handles{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
 
 .h1{
     color: var(--base);
 }
 h2{
     text-align: center;
+    padding-bottom: 50px;
  }
 
 body{
-background-color: #153733;
-color: white;
-font-family: 'helvetica neue', sans-serif;
-font-weight: 100;
-font-size: 50px;
-margin: 0;
+    background-color: #153733;
+    color: white;
+    font-family: 'essonnes_displaylight_italic';
+    font-weight: 100;
+    font-size: 50px;
+    margin: 0;
 }
 
 .controls {
     margin-bottom: 50px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-left: 60px;
+}
+.picture{
+    padding-left: 200px;
+}
+.img{
+    max-width: 1300px;
 
 }
 
@@ -42,6 +65,6 @@ a {
 }
 input{
     width: 100px;
-    margin-bottom: 2%;
+    margin-bottom: 20%;
     
 }
